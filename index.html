@@ -1,97 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hemanth Tadi | Portfolio</title>
+  <title>Hemanth Tadi | DevOps Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    body {
-      display: flex;
-      height: 100vh;
-    }
-
-    /* LEFT SIDE IMAGE */
-    .left {
-      width: 40%;
-      background: url("photo.jpeg") no-repeat center;
-      background-size: cover;
-    }
-
-    /* RIGHT SIDE */
-    .right {
-      width: 60%;
-      padding: 50px;
-      overflow-y: auto;
-      background: linear-gradient(135deg, #f8fafc, #e3edf7);
-    }
-
-    /* TOP SECTION */
-    .top-section {
-      margin-top: 60px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 60px;
-      margin-bottom: 10px;
-      color: #111827;
-    }
-
-    h3 {
-      color: gray;
-      margin-bottom: 20px;
-    }
-
-    /* BUTTON */
-    .btn {
-      background: linear-gradient(135deg, #2563eb, #1e40af);
-      color: white;
-      padding: 12px 24px;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: 600;
-      transition: all 0.2s ease;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      margin-bottom: 60px;
-    }
-
-    .btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 14px rgba(0,0,0,0.2);
-    }
-
-    .btn:active {
-      transform: scale(0.96);
-    }
-
-    /* SECTIONS */
-    .section {
-      margin: 40px 0;
-    }
-
-    .portfolio img {
-      width: 48%;
-      margin: 1%;
-    }
-
-    .contact p {
-      margin: 5px 0;
-    }
-
-    .contact a {
-      color: blue;
-      text-decoration: none;
-    }
-
-  </style>
+  <!-- CSS file -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -100,40 +17,50 @@
 
   <div class="right">
 
-    <div class="top-section">
-      <h1>Hemanth Tadi</h1>
-      <h3>AWS DevOps Engineer</h3>
+    <h1 class="typing">Hemanth Tadi</h1>
+    <h3>AWS DevOps Engineer</h3>
 
-      <a href="resume.pdf" download>
-        <button class="btn">Download Resume</button>
-      </a>
+    <a href="resume.pdf" download>
+      <button class="btn">
+        <i class="fa fa-download"></i> Download Resume
+      </button>
+    </a>
+
+    <div class="section">
+      <div class="icon-title"><i class="fa fa-user"></i> About Me</div>
+      <p>DevOps Engineer focused on AWS, Terraform, CI/CD, Docker and automation.</p>
     </div>
 
     <div class="section">
-      <h2>About Me</h2>
-      <p>
-        DevOps Engineer passionate about AWS, Terraform, and automation.
-      </p>
+      <div class="icon-title"><i class="fa fa-cogs"></i> Skills</div>
+      <div class="skills">
+        <span>AWS</span>
+        <span>Terraform</span>
+        <span>Jenkins</span>
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>Linux</span>
+      </div>
     </div>
 
     <div class="section">
-      <h2>Skills</h2>
-      <p>AWS, Terraform, Jenkins, Docker, Kubernetes, Linux</p>
+      <div class="icon-title"><i class="fa fa-diagram-project"></i> Projects</div>
+      <p>Built CI/CD pipelines, automated AWS infrastructure, containerized apps.</p>
     </div>
 
-    <div class="section portfolio">
-      <h2>My Projects</h2>
-      <img src="https://via.placeholder.com/300">
-      <img src="https://via.placeholder.com/300">
-    </div>
-
-    <div class="section contact">
-      <h2>Contact</h2>
+    <div class="section">
+      <div class="icon-title"><i class="fa fa-envelope"></i> Contact</div>
       <p>Email: hemanthtadi777@gmail.com</p>
       <p>Phone: +91-7995498726</p>
+
       <p>
-        <a href="https://www.linkedin.com/in/hemanth-tadi" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/hemanthtadi" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/hemanth-tadi" target="_blank">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        |
+        <a href="https://github.com/hemanthtadi" target="_blank">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
       </p>
     </div>
 
