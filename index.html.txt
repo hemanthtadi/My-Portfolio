@@ -87,7 +87,7 @@
       <h1>Hemanth Tadi</h1>
       <h3>AWS DevOps Engineer</h3>
 
-      <a href="resume.pdf" download>
+      <a href="Hemanth-DevOps.pdf" download>
         <button class="btn">Download Resume</button>
       </a>
     </div>
@@ -96,7 +96,7 @@
       <h2>About Me</h2>
       <p>
         DevOps Engineer passionate about AWS, Terraform, and automation.
-        Working at Duranch Tech Services.
+        Working at Orego Biz Solutions Pvt Ltd.
       </p>
     </div>
 
