@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT IMAGE PANEL */
+.left {
+  width: 40%;
+  background: url("photo.jpeg") no-repeat center;
+  background-size: cover;
+}
+
+/* RIGHT CONTENT */
+.right {
+  width: 60%;
+  padding: 40px;
+  overflow-y: auto;
+
+  background: linear-gradient(-45deg, #f8fafc, #e3edf7, #f1f5f9);
+  background-size: 400% 400%;
+  animation: bgMove 10s ease infinite;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* NAME ANIMATION */
+.typing {
+  font-size: 55px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid #111;
+  width: 0;
+  animation: typing 2s steps(12) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing {
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+h3 {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.btn {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* SECTIONS */
+.section {
+  margin: 20px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.section:nth-child(1) { animation-delay: 0.1s; }
+.section:nth-child(2) { animation-delay: 0.2s; }
+.section:nth-child(3) { animation-delay: 0.3s; }
+.section:nth-child(4) { animation-delay: 0.4s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* SKILLS */
+.skills span {
+  display: inline-block;
+  background: #2563eb;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  transform: scale(1.1);
+  background: #1e40af;
+}
+
+/* ICON TITLE */
+.icon-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.icon-title i {
+  margin-right: 8px;
+  color: #2563eb;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+}
