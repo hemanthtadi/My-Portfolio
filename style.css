@@ -10,16 +10,21 @@ body {
   height: 100vh;
 }
 
-/* LEFT IMAGE */
+/* LEFT IMAGE (DESKTOP DEFAULT) */
 .left {
   width: 40%;
   background: url("photo.jpeg") no-repeat center;
   background-size: cover;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
 }
 
 /* RIGHT CONTENT */
 .right {
   width: 60%;
+  margin-left: 40%;
   padding: 40px;
   overflow-y: auto;
   background: radial-gradient(circle at top left, #e0f2fe, #f8fafc, #eef2ff);
@@ -108,18 +113,37 @@ a {
   border-radius: 8px;
 }
 
-/* RESPONSIVE */
+/* ========================= */
+/* 🚀 RESPONSIVE FIX (BEST) */
+/* ========================= */
+
 @media (max-width: 768px) {
+
   body {
     flex-direction: column;
   }
 
+  /* LEFT IMAGE FIX - MOBILE SHOW FULL IMAGE */
   .left {
+    position: relative;
     width: 100%;
-    height: 250px;
+    height: 300px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-color: #0f172a;
   }
 
+  /* RIGHT CONTENT FULL WIDTH */
   .right {
     width: 100%;
+    margin-left: 0;
+  }
+
+  /* MAKE TEXT FIT MOBILE */
+  .name {
+    font-size: 36px;
   }
 }
