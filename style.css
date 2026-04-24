@@ -60,19 +60,18 @@ h3 {
 
 /* BUTTON */
 .btn {
-  background: linear-gradient(135deg, #2563eb, #1e40af);
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
   color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+  padding: 12px 26px;
+  border-radius: 10px;
   font-weight: 600;
-  margin-bottom: 30px;
-  transition: 0.3s;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.5);
 }
 
 /* SECTIONS */
@@ -80,39 +79,47 @@ h3 {
   margin: 20px 0;
   padding: 20px;
   background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: 0.3s;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
 }
 
 .section:hover {
-  transform: translateY(-2px);
+  transform: translateY(-5px) scale(1.01);
 }
 
 /* SKILLS */
 .skills span {
-  display: inline-block;   /* makes width fit content */
-  margin-bottom: 10px;
-  padding: 8px 14px;
-  font-size: 14px;
+  display: inline-block;
+  margin: 6px 6px 0 0;
+  padding: 6px 12px;
+  font-size: 13px;
 
-  background: #2f5fd0;     /* same blue style */
+  background: #2563eb;
   color: white;
-  border-radius: 20px;
+  border-radius: 999px;
 
-  max-width: fit-content;  /* ensures it stops at text */
+  transition: 0.2s;
+}
+
+.skills span:hover {
+  background: #1e40af;
+  transform: scale(1.05);
 }
 
 /* ICON TITLE */
 .icon-title {
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #111827;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
 }
 
 .icon-title i {
-  margin-right: 8px;
+  margin-right: 10px;
+  font-size: 18px;
   color: #2563eb;
 }
 
@@ -125,12 +132,39 @@ a {
 
 /* PROJECT BOX */
 .project {
-  margin-top: 10px;
-  padding: 12px;
-  border-left: 4px solid #2563eb;
-  background: #f8fafc;
-  border-radius: 8px;
+  margin-top: 12px;
+  padding: 14px;
+  border-left: 5px solid #2563eb;
+  background: #f1f5f9;
+  border-radius: 10px;
+  transition: 0.3s;
 }
+
+.project:hover {
+  background: #e0ecff;
+}
+
+p, li {
+  line-height: 1.6;
+  color: #334155;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.section:not(:last-child) {
+  border-bottom: 1px solid #e2e8f0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+<p style="margin-top:20px; font-weight:600; color:#2563eb;">
+  🚀 Open to DevOps & Cloud Opportunities
+</p>
+
 
 /* ========================= */
 /* 🚀 MOBILE RESPONSIVE */
