@@ -186,29 +186,35 @@ html {
 
   body {
     flex-direction: column;
+    height: auto;
   }
 
+  /* LEFT IMAGE MOBILE */
   .left {
-    position: relative !important;   /* 🔥 FORCE override */
+    position: relative;
     width: 100%;
     height: auto;
-    overflow: hidden;
   }
 
   .left img {
     width: 100%;
     height: auto;
-    display: block;
+
+    /* 👇 Show full image */
     object-fit: contain;
+
+    /* 👇 Keep face visible */
+    object-position: center top;
   }
 
+  /* RIGHT CONTENT FULL WIDTH */
   .right {
     width: 100%;
-    margin-left: 0 !important;  /* 🔥 remove desktop offset */
-    padding: 25px 20px;
+    margin-left: 0;
   }
 
+  /* TEXT ADJUST */
   .name {
-    font-size: 34px;
+    font-size: 36px;
   }
 }
