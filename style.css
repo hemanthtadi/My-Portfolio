@@ -188,37 +188,27 @@ html {
     flex-direction: column;
   }
 
-  /* IMAGE SECTION */
   .left {
-    position: relative;
+    position: relative !important;   /* 🔥 FORCE override */
     width: 100%;
     height: auto;
     overflow: hidden;
-    order: 1;
   }
 
   .left img {
     width: 100%;
-    height: auto;          /* ✅ natural height */
-    display: block;        /* ✅ removes extra gap */
-    object-fit: contain;   /* ✅ full image visible */
+    height: auto;
+    display: block;
+    object-fit: contain;
   }
 
-  /* CONTENT SECTION */
   .right {
     width: 100%;
-    margin-left: 0;
+    margin-left: 0 !important;  /* 🔥 remove desktop offset */
     padding: 25px 20px;
-    order: 2;
   }
 
-  /* TEXT SIZE */
   .name {
     font-size: 34px;
-    margin-bottom: 5px;
-  }
-
-  h3 {
-    font-size: 18px;
   }
 }
