@@ -188,29 +188,37 @@ html {
     flex-direction: column;
   }
 
-  /* IMAGE ON TOP */
+  /* IMAGE SECTION */
   .left {
     position: relative;
     width: 100%;
     height: auto;
+    overflow: hidden;
+    order: 1;
   }
 
   .left img {
     width: 100%;
-    height: auto;
-    object-fit: contain;   /* NO ZOOM */
-    object-position: center;
+    height: auto;          /* ✅ natural height */
+    display: block;        /* ✅ removes extra gap */
+    object-fit: contain;   /* ✅ full image visible */
   }
 
-  /* CONTENT FULL WIDTH */
+  /* CONTENT SECTION */
   .right {
     width: 100%;
     margin-left: 0;
-    padding: 20px;
+    padding: 25px 20px;
+    order: 2;
   }
 
   /* TEXT SIZE */
   .name {
-    font-size: 36px;
+    font-size: 34px;
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    font-size: 18px;
   }
 }
