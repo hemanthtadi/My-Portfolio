@@ -35,12 +35,43 @@ body {
 /* ========================= */
 /* RIGHT CONTENT */
 /* ========================= */
-.right {
-  width: 60%;
-  margin-left: 40%;
-  padding: 40px;
-  overflow-y: auto;
-  background: radial-gradient(circle at top left, #e0f2fe, #f8fafc, #eef2ff);
+.right 
+.hero-banner{
+  background: linear-gradient(
+      135deg,
+      #0f172a,
+      #1e293b
+  );
+  color:white;
+  padding:30px;
+  border-radius:16px;
+  margin-bottom:25px;
+}
+
+.hero-content{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+}
+
+.hero-tag{
+  display:inline-block;
+  padding:6px 12px;
+  border-radius:999px;
+  background:#2563eb;
+  font-size:12px;
+  margin-bottom:12px;
+}
+
+.hero-banner h2{
+  margin-bottom:10px;
+}
+
+.hero-graphic{
+  font-size:18px;
+  font-weight:600;
+  color:#93c5fd;
 }
 
 /* NAME */
