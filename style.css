@@ -124,8 +124,43 @@ h3 {
   transition: all 0.3s ease;
 }
 
-.section:hover {
-  transform: translateY(-5px) scale(1.01);
+.section:hover .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.5);
+}
+
+/* ========================= */
+/* STATS CARDS */
+/* ========================= */
+
+.stats{
+  display:flex;
+  gap:15px;
+  margin-bottom:25px;
+  flex-wrap:wrap;
+}
+
+.stat-card{
+  flex:1;
+  min-width:120px;
+  background:white;
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.stat-card h2{
+  color:#2563eb;
+}
+
+/* SECTIONS */
+.section {
+  margin: 20px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 14px;
+  ...
 }
 
 /* SECTION TITLE */
